@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Patient Data</h2>          
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Password</th>
+        <th>Name</th>
+        <th>Visit</th>
+        <th>Health</th>
+        <th>Medication</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+            <tr>
+               <td>{{row["pid"]}}</td>
+               <td>{{row["password"]}}</td>
+               <td> {{ row["pname"]}}</td>
+               <td>{{row['visit']}}</td>
+               <td>{{row['health']}}</td>
+               <td>{{row['medication']}}</td>   
+            </tr>
+         {% endfor %}
+      
+    </tbody>
+  </table>
+</div>
+  
+
+
+
+
+   
+      <a href = "/logout"><button type="button" class="btn btn-primary btn-lg">Logout</button></a>
+</div>
+   </body>
+</html>

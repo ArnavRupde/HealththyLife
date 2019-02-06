@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Add Patient</h2>
+  <form action = "{{ url_for('addrec') }}" method = "POST">
+    <div class="form-group">
+      <label for="text">ID:</label>
+      <input type="number" class="form-control" placeholder="Enter User ID" name="id">
+    </div>
+    <div class="form-group">
+      <label for="text">Password:</label>
+      <input type="text" class="form-control" placeholder="Enter Password" name="psswd">
+    </div>
+    <div class="form-group">
+      <label for="text">Name:</label>
+      <input type="text" class="form-control" placeholder="Enter User Name" name="nme">
+    </div>
+    <div class="form-group">
+      <label for="text">Health:</label>
+      <input type="text" class="form-control" placeholder="Enter Health Problem" name="hlth">
+    </div>
+    <div class="form-group">
+      <label for="text">Medication:</label>
+      <input type="text" class="form-control" placeholder="Enter Prescription" name="medicine">
+    </div>
+    <div class="form-group">
+      <label for="text">Health Value:</label>
+      <input type="number" class="form-control" placeholder="Enter Health value in range(0-1)" name = "val" step="any">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
