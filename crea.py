@@ -27,7 +27,6 @@ conn.commit()
 ##cur.execute("SELECT * FROM patients")
 ## 
 ##rows = cur.fetchall()
-## 
 ##for row in rows:
 ##    print(row)
 
