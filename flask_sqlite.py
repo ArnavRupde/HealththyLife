@@ -1,3 +1,4 @@
+#importing important libraries
 from flask import Flask, render_template, request
 import sqlite3 as sql
 from flask import flash, redirect, session, abort
